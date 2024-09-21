@@ -69,6 +69,9 @@
     "@types/cors": "^2.8.17",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/serve-favicon": "^2.5.7",
-    "@types/swagger-ui-dist": "^3.30.4"
+    "@types/swagger-ui-dist": "^3.30.4",
+    "shx":"^0.3.4",
+    "@types/koa" : "^2.15.0",
+    "ts-node-dev" : "^2.0.0"
   }
 }

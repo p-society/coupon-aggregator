@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb_for_coupon_agg
+    ports:
+      - "27017:27017"
+    volumes:
+      - coupon_agg_volume:/data/db
+
+  coupon_agg_backned:
+    build: .
+    container_name: coupon_aggregator_backend
+    depends_on:
+      - mongodb
+    ports:
+      - "3030:3030"
+volumes:
+  coupon_agg_volume:
